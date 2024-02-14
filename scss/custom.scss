@@ -1,0 +1,162 @@
+/******************************************************
+CUSTOM VARIABLES
+******************************************************/
+$primary: #081d2d;
+$secondary: #ece8df;
+$top-bar-bg: #dbd4c4;
+$menu-link-color: #efece2;
+$icon-box-bg: #b2aa97;
+$icon-color: #dfd5c5;
+
+@import '../assets/bootstrap-5.3.2/scss/bootstrap.scss';
+
+body {
+  font-family: 'Baskervville', serif;
+  font-weight: 100;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/******************************************************
+FONT SIZE
+******************************************************/
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-9 {
+  font-size: 12px;
+}
+
+.fs-8 {
+  font-size: 14px;
+}
+
+.fs-7 {
+  font-size: 16px;
+}
+
+.fs-0 {
+  font-size: 50px;
+}
+
+/******************************************************
+TOP BAR
+******************************************************/
+#top-bar {
+  background-color: $top-bar-bg;
+}
+
+/******************************************************
+OFFER SECTIONS- CONTENT BOXES
+******************************************************/
+.icon-box {
+  background-color: $icon-box-bg;
+  width: 250px;
+}
+
+.icon-box .fa-circle-check {
+  color: $icon-color;
+}
+
+.shop-list-product-title {
+  margin-top: -80px;
+}
+
+#main-banner img {
+  width: 115%;
+}
+
+.navbar .nav-link {
+  color: $menu-link-color;
+}
+
+/******************************************************
+STICKER BUTON
+******************************************************/
+.sticker-button {
+  content: '';
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  height: 177px;
+  background-color: #fff;
+  position: fixed;
+  margin-left: 40px;
+  background-image: url('../images/logo-sticky.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 999;
+  border-radius: 5px;
+  top: 450px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sticker-button.activate {
+  opacity: 1;
+  width: 52px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/******************************************************
+RESPONSIVE DESIGN - MOBILE 
+******************************************************/
+@media only screen and (max-width: 480px) {
+  #main-banner .row {
+    padding-top: 30px;
+  }
+
+  #main-banner h2 {
+    font-size: 32px;
+  }
+
+  #main-banner p {
+    font-size: 16px !important;
+  }
+
+  .offer-text-container {
+    text-align: center;
+  }
+
+  .icon-box {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .offer-text {
+    font-size: 16px !important;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .slogan {
+    width: 100% !important;
+  }
+
+  #blog .col-lg-6 {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+}
